@@ -1,0 +1,164 @@
+body {background-color: #8BA1BB;
+    font-family: Arial;
+    margin: 0;
+}
+
+h2{
+    background-color: green;
+    display: 
+    block;
+}
+
+p#id_black_background {
+    /*background-color: black;*/
+    color: black;
+}
+
+ul#id_background {
+    background-color: rgb(2, 122, 38);
+    color: white;
+}
+
+p.classbackground {
+    background-color: rgb(61, 45, 209);
+    color: white;
+}
+
+div.content {
+    background-color: white;
+    margin: 0% 10% 10% 10%;
+    padding: 5%;
+    min-width: 400px;  /*윈도우창 줄여도 더이상 컨텐츠가 줄어들지 않는 크기 정의*/
+    overflow:auto; /*컨텐츠 내용이 content밖으로 나가면 자동으로 경계선을 늘려줌*/
+    box-shadow: 0px 0px 20px 30px rgba(0,0,0,0.2);
+
+}
+h1 {
+    text-align: center;
+    /*font-size: xx-large; CSS에서 코멘트 넣는 방법*/
+}
+p.description {
+    text-align: center;
+    max-width: 300px;
+    background-color: yellow;
+    display: inline-block;
+}
+div.center {
+    text-align: center;
+    background-color: white;
+}
+
+div.recipeCenter {
+    text-align: center;
+    /*background-color: red;*/
+    display: block;
+    margin-bottom: -20px;
+}
+p.recipe {
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    font-size: 2pc;
+    font-weight: bold;
+    color: white;
+    padding: 1%;
+    margin-bottom: 0px;
+}
+div.separator{
+    height: 1px;
+    width: 100px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.image{
+    width: 100%;
+}
+
+div.info{
+    position: relative; 
+    background-color: blueviolet;
+}
+table.info{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    color: white;
+    background-color: rgb(5, 61, 61);
+    height: 80;
+}
+/*All the td of the table that has a info class*/
+table.info td{
+    text-align: center;
+    vertical-align: top;
+    
+}
+table.info th{
+    vertical-align: bottom;
+    padding-top: 10px;
+}
+
+img.info{
+    display: block;
+    max-height: 400px; /*이미지가 더 커지는 것 제한*/
+    object-fit: cover; /*이미지가 커지면서 가로세로 비율유지, 귀퉁이는 없어짐*/
+    min-height: 200px; /*이미지로딩 시간이 길때 이미지 공간 유지*/
+    background-color: lightgray;/*이미지로딩 시간이 길때 백그라운드 컬러 보여짐*/
+}
+
+div.col {
+    width: 45%; /*공통되는 것은 한 곳에 묶을 수도 있음*/
+}
+
+div.col h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+    border-bottom: 5px solid #6C829D;
+    padding-bottom: 10px;
+}
+
+div.col1{
+    background-color: aqua;
+    /*width: 50%;*/
+    display: inline-block;
+
+}
+div.col2{
+    float: right; /*이미지가 떠다닐수있게 함*/
+    /*width: 50%;*/
+}
+div.Ingredients p{
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    padding: 2px;
+    margin-top: 4px;
+    margin-bottom: 0%;
+}
+
+table.instructions p.number {
+    margin: 0px;
+    background-color: #6C829D;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 25px;
+    height:25px;
+    box-sizing: border-box; /*가로세로 높이 고정 25x25*/
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 30%; /*사각형 테두리 굴림*/
+}
+
+table.instructions td.instruction_step {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+}
+
+table.instructions tr{
+    height: 20px;  /*테이블 한 줄의 높이를 글자의 길이에 상관없이 일정하게 유지*/
+}
